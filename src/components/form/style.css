@@ -1,0 +1,190 @@
+.form__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  position: relative !important;
+  height: 500px;
+  width: 400px;
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  animation: revealCard 0.3s ease-in-out;
+}
+
+@keyframes revealCard {
+  from {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.card::before {
+  content: '';
+  box-sizing: content-box;
+  position: absolute;
+  top: -90px;
+  right: 70px;
+  height: 100%;
+  width: 300px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 150px 150px 0 0 var(--color-primary);
+  /* background: var(--color-primary); */
+  /* box-shadow: 10px 10px 0 0 red; */
+}
+
+.card .header {
+  height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card .header h3 {
+  text-align: center;
+  font-size: 0.98rem;
+  padding-top: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.card .header .login__close__svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+.card .body {
+  position: relative;
+}
+
+.card .body h3 {
+  text-align: center;
+  font-size: 0.98rem;
+  font-family: Roboto;
+  font-weight: 400;
+  width: 100%;
+}
+
+.card .body .phone__number__wrapper {
+  position: relative !important;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 0px 20px 10px 20px;
+}
+
+.phone__number__wrapper .country__code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  padding: 10px 0px;
+  line-height: 1.23;
+}
+
+.country__code .code__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Roboto;
+  line-height: 1.23;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.country__code .code__container span:first-child {
+  color: var(--color-septenary);
+  font-size: 0.7rem;
+}
+
+.country__code .code__container span:nth-child(2) {
+  color: #222222;
+  font-size: 0.9rem;
+}
+
+.country__code svg {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.phone__number {
+  position: relative;
+}
+
+.phone__number span {
+  position: absolute;
+  top: 20.5px;
+  left: 10px;
+  color: #222222;
+  font-size: 0.9rem;
+  font-family: Roboto;
+}
+
+.phone__number label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #adadad;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.9rem;
+  font-family: Roboto;
+  transition: 0.5s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.phone__number label.isNotEmpty {
+  top: 10px;
+  font-size: 0.8rem;
+}
+
+.phone__number input {
+  width: 100%;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 10px;
+  background: transparent;
+}
+
+.phone__number input:focus ~ label {
+  top: 10px;
+  font-size: 0.8rem;
+}
+
+.divier {
+  height: 1px;
+  width: 100%;
+  padding: 0px !important;
+  background-color: #ccc;
+}
+
+@media (max-width: 572px) {
+  .form__wrapper .card {
+    height: 400px;
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}

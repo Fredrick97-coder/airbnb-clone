@@ -1,0 +1,37 @@
+.num__wrapper {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  height: 400px;
+  width: 385px;
+  z-index: 999;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* background: linear-gradient(
+    to bottom,
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
+  ); */
+  background: rgba(39, 40, 40, 0.34);
+  padding-left: 15px;
+  box-shadow: 1px 14px 5px 0 rgba(0, 0, 0, 0.123);
+  animation: showDrop 0.5s ease-in-out;
+}
+
+@keyframes showDrop {
+  from {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.num__item p {
+  font-family: Roboto;
+  color: #fff !important;
+  font-weight: 600;
+  cursor: pointer;
+}

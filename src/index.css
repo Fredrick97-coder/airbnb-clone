@@ -1,0 +1,51 @@
+:root {
+  --color-primary: #ff385c;
+  --color-secondary: #ffa500;
+  --color-tertiary: #ff0000;
+  --color-quaternary: #00ff00;
+  --color-quinary: #0000ff;
+  --color-senary: #ff00ff;
+  --color-septenary: #00ffff;
+  --color-octonary: #ffff00;
+  --color-nonary: #000000;
+  --color-decenary: #ffffff;
+  --color-undenary: #f5f5f5;
+  --color-duodenary: #c0c0c0;
+  --color-tredenary: #808080;
+  --color-quattuorinary: #404040;
+  --color-quinquenary: #202020;
+  --color-sexenary: #000000;
+  --color-septenary: #ffffff;
+  --color-octonary: #f5f5f5;
+  --color-nonary: #c0c0c0;
+  --color-undenary: #404040;
+  --color-duodenary: #202020;
+  --color-tredenary: #000000;
+  --color-quattuorinary: #ffffff;
+  --color-quinquenary: #f5f5f5;
+  --color-sexenary: #c0c0c0;
+  --color-septenary: #808080;
+  --color-octonary: #404040;
+  --color-nonary: #202020;
+  --color-undenary: #ffffff;
+  --color-duodenary: #f5f5f5;
+  --color-tredenary: #c0c0c0;
+  --color-quattuorinary: #808080;
+  --color-quinquenary: #404040;
+  --color-sexenary: #202020;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans' 'Circular',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

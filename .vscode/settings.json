@@ -1,0 +1,71 @@
+{
+ "editor.cursorStyle": "line-thin",
+ "editor.fontSize": 22,
+ "files.autoSave": "off",
+ "editor.tabSize": 1,
+ "terminal.integrated.fontSize": 15,
+ "terminal.integrated.lineHeight": 1.23,
+ "terminal.integrated.cursorBlinking": true,
+ "terminal.integrated.cursorStyle": "line",
+ "emmet.includeLanguages": {
+  "javascript": "javascriptreact",
+  "typescript": "typescriptreact"
+ },
+ "liveSassCompile.settings.formats": [
+  {
+   "format": "expanded",
+   "extensionName": ".css",
+   "savePath": "/src/Stylesheet/css"
+  }
+ ],
+ "showSuggestionsAsSnippets": true,
+ "editor.linkedEditing": true,
+ "editor.quickSuggestions": {
+  "other": "on",
+  "strings": true
+ },
+ "tailwindCSS.includeLanguages": {
+  "plaintext": "html",
+  "javascript": "javascriptreactnative",
+  "typescript": "typescriptreact",
+  "scss": "sass",
+  "less": "less",
+  "css": "css"
+ },
+ "javascript.updateImportsOnFileMove.enabled": "always",
+ "editor.formatOnPaste": true,
+ "editor.formatOnSave": true,
+ "editor.formatOnType": true,
+ "editor.defaultFormatter": "esbenp.prettier-vscode",
+ "[javascript]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ // "[prisma]": {
+ //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+ // },
+ "[prisma]": {
+  "editor.defaultFormatter": "Prisma.prisma"
+ },
+ "editor.cursorBlinking": "expand",
+ "editor.suggest.showUsers": true,
+ "editor.suggestSelection": "first",
+ "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+ "terminal.explorerKind": "external",
+ "javascript.validate.enable": false,
+ "emmet.preferences": {
+  "triggerExpansionOnTab": true,
+  "syntaxProfiles": {
+   "jsx": "jsx",
+   "javascriptreact": "jsx",
+   "typescriptreact": "jsx",
+   "typescriptreactnative": "jsx",
+   "javascript": "js",
+   "typescript": "js",
+   "html": "html",
+   "handlebars": "handlebars",
+   "razor": "razor",
+   "vue": "vue"
+  }
+ }
+}
